@@ -189,6 +189,7 @@ class ImageScrollView: UIScrollView, UIScrollViewDelegate {
 		
 	}
 	
+   
 	func zoom(to point: CGPoint, animated: Bool) {
 		let currentScale = self.zoomScale
 		let minScale = self.minimumZoomScale
@@ -199,11 +200,29 @@ class ImageScrollView: UIScrollView, UIScrollViewDelegate {
 		}
 		
 		let toScale = maxScale
-		let finalScale = (currentScale == minScale) ? toScale : minScale
+		let finalScale = (currentScale == minScale) ? toScale : minScale//pp
+       
 		let zoomRect = self.zoomRect(for: finalScale, withCenter: point)
 		self.zoom(to: zoomRect, animated: animated)
+        
 	}
 	
+    
+    func getZoomRect()->CGRect?{
+        let currentScale = self.zoomScale
+        let minScale = self.minimumZoomScale
+        let maxScale = self.maximumZoomScale
+        
+        if (minScale == maxScale && minScale > 1) {
+            return nil;
+        }
+        
+        let toScale = maxScale
+        let finalScale = (currentScale == minScale) ? toScale : minScale//pp
+        
+        let rect = zoomRect(for: finalScale, withCenter: center)
+        return rect
+    }
 	
 	// The center should be in the imageView's coordinates
 	func zoomRect(for scale: CGFloat, withCenter center: CGPoint) -> CGRect {
