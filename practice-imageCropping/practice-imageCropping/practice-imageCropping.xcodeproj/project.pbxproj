@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E217C0028561BC2000A556D /* practice_imageCroppingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217BFF28561BC2000A556D /* practice_imageCroppingApp.swift */; };
+		8E217C0228561BC2000A556D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C0128561BC2000A556D /* ContentView.swift */; };
+		8E217C0428561BC6000A556D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E217C0328561BC6000A556D /* Assets.xcassets */; };
+		8E217C0728561BC6000A556D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E217C0628561BC6000A556D /* Preview Assets.xcassets */; };
+		8E217C0928561BC6000A556D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C0828561BC6000A556D /* Persistence.swift */; };
+		8E217C0C28561BC6000A556D /* practice_imageCropping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C0A28561BC6000A556D /* practice_imageCropping.xcdatamodeld */; };
+		8E217C1628561BC6000A556D /* practice_imageCroppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C1528561BC6000A556D /* practice_imageCroppingTests.swift */; };
+		8E217C2028561BC6000A556D /* practice_imageCroppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C1F28561BC6000A556D /* practice_imageCroppingUITests.swift */; };
+		8E217C2228561BC6000A556D /* practice_imageCroppingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C2128561BC6000A556D /* practice_imageCroppingUITestsLaunchTests.swift */; };
+		8E217C2F28561F62000A556D /* scrollableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C2E28561F62000A556D /* scrollableImage.swift */; };
+		8E217C3128561F71000A556D /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C3028561F71000A556D /* helper.swift */; };
+		8E217C3328562A47000A556D /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C3228562A47000A556D /* ImageScrollView.swift */; };
+		8E217C3528562A66000A556D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E217C3428562A66000A556D /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E217C1228561BC6000A556D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E217BF428561BC2000A556D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E217BFB28561BC2000A556D;
+			remoteInfo = "practice-imageCropping";
+		};
+		8E217C1C28561BC6000A556D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E217BF428561BC2000A556D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E217BFB28561BC2000A556D;
+			remoteInfo = "practice-imageCropping";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E217BFC28561BC2000A556D /* practice-imageCropping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practice-imageCropping.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E217BFF28561BC2000A556D /* practice_imageCroppingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice_imageCroppingApp.swift; sourceTree = "<group>"; };
+		8E217C0128561BC2000A556D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8E217C0328561BC6000A556D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E217C0628561BC6000A556D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E217C0828561BC6000A556D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8E217C0B28561BC6000A556D /* practice_imageCropping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = practice_imageCropping.xcdatamodel; sourceTree = "<group>"; };
+		8E217C1128561BC6000A556D /* practice-imageCroppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-imageCroppingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E217C1528561BC6000A556D /* practice_imageCroppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice_imageCroppingTests.swift; sourceTree = "<group>"; };
+		8E217C1B28561BC6000A556D /* practice-imageCroppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "practice-imageCroppingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E217C1F28561BC6000A556D /* practice_imageCroppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice_imageCroppingUITests.swift; sourceTree = "<group>"; };
+		8E217C2128561BC6000A556D /* practice_imageCroppingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice_imageCroppingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8E217C2E28561F62000A556D /* scrollableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollableImage.swift; sourceTree = "<group>"; };
+		8E217C3028561F71000A556D /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		8E217C3228562A47000A556D /* ImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		8E217C3428562A66000A556D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E217BF928561BC2000A556D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C0E28561BC6000A556D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C1828561BC6000A556D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E217BF328561BC2000A556D = {
+			isa = PBXGroup;
+			children = (
+				8E217BFE28561BC2000A556D /* practice-imageCropping */,
+				8E217C1428561BC6000A556D /* practice-imageCroppingTests */,
+				8E217C1E28561BC6000A556D /* practice-imageCroppingUITests */,
+				8E217BFD28561BC2000A556D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E217BFD28561BC2000A556D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E217BFC28561BC2000A556D /* practice-imageCropping.app */,
+				8E217C1128561BC6000A556D /* practice-imageCroppingTests.xctest */,
+				8E217C1B28561BC6000A556D /* practice-imageCroppingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E217BFE28561BC2000A556D /* practice-imageCropping */ = {
+			isa = PBXGroup;
+			children = (
+				8E217BFF28561BC2000A556D /* practice_imageCroppingApp.swift */,
+				8E217C0128561BC2000A556D /* ContentView.swift */,
+				8E217C2E28561F62000A556D /* scrollableImage.swift */,
+				8E217C3428562A66000A556D /* ViewController.swift */,
+				8E217C3228562A47000A556D /* ImageScrollView.swift */,
+				8E217C3028561F71000A556D /* helper.swift */,
+				8E217C0328561BC6000A556D /* Assets.xcassets */,
+				8E217C0828561BC6000A556D /* Persistence.swift */,
+				8E217C0A28561BC6000A556D /* practice_imageCropping.xcdatamodeld */,
+				8E217C0528561BC6000A556D /* Preview Content */,
+			);
+			path = "practice-imageCropping";
+			sourceTree = "<group>";
+		};
+		8E217C0528561BC6000A556D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8E217C0628561BC6000A556D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E217C1428561BC6000A556D /* practice-imageCroppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E217C1528561BC6000A556D /* practice_imageCroppingTests.swift */,
+			);
+			path = "practice-imageCroppingTests";
+			sourceTree = "<group>";
+		};
+		8E217C1E28561BC6000A556D /* practice-imageCroppingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E217C1F28561BC6000A556D /* practice_imageCroppingUITests.swift */,
+				8E217C2128561BC6000A556D /* practice_imageCroppingUITestsLaunchTests.swift */,
+			);
+			path = "practice-imageCroppingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E217BFB28561BC2000A556D /* practice-imageCropping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E217C2528561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCropping" */;
+			buildPhases = (
+				8E217BF828561BC2000A556D /* Sources */,
+				8E217BF928561BC2000A556D /* Frameworks */,
+				8E217BFA28561BC2000A556D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "practice-imageCropping";
+			productName = "practice-imageCropping";
+			productReference = 8E217BFC28561BC2000A556D /* practice-imageCropping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E217C1028561BC6000A556D /* practice-imageCroppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E217C2828561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCroppingTests" */;
+			buildPhases = (
+				8E217C0D28561BC6000A556D /* Sources */,
+				8E217C0E28561BC6000A556D /* Frameworks */,
+				8E217C0F28561BC6000A556D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E217C1328561BC6000A556D /* PBXTargetDependency */,
+			);
+			name = "practice-imageCroppingTests";
+			productName = "practice-imageCroppingTests";
+			productReference = 8E217C1128561BC6000A556D /* practice-imageCroppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E217C1A28561BC6000A556D /* practice-imageCroppingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E217C2B28561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCroppingUITests" */;
+			buildPhases = (
+				8E217C1728561BC6000A556D /* Sources */,
+				8E217C1828561BC6000A556D /* Frameworks */,
+				8E217C1928561BC6000A556D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E217C1D28561BC6000A556D /* PBXTargetDependency */,
+			);
+			name = "practice-imageCroppingUITests";
+			productName = "practice-imageCroppingUITests";
+			productReference = 8E217C1B28561BC6000A556D /* practice-imageCroppingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E217BF428561BC2000A556D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					8E217BFB28561BC2000A556D = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					8E217C1028561BC6000A556D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8E217BFB28561BC2000A556D;
+					};
+					8E217C1A28561BC6000A556D = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 8E217BFB28561BC2000A556D;
+					};
+				};
+			};
+			buildConfigurationList = 8E217BF728561BC2000A556D /* Build configuration list for PBXProject "practice-imageCropping" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E217BF328561BC2000A556D;
+			productRefGroup = 8E217BFD28561BC2000A556D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E217BFB28561BC2000A556D /* practice-imageCropping */,
+				8E217C1028561BC6000A556D /* practice-imageCroppingTests */,
+				8E217C1A28561BC6000A556D /* practice-imageCroppingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E217BFA28561BC2000A556D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E217C0728561BC6000A556D /* Preview Assets.xcassets in Resources */,
+				8E217C0428561BC6000A556D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C0F28561BC6000A556D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C1928561BC6000A556D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E217BF828561BC2000A556D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E217C2F28561F62000A556D /* scrollableImage.swift in Sources */,
+				8E217C3328562A47000A556D /* ImageScrollView.swift in Sources */,
+				8E217C0928561BC6000A556D /* Persistence.swift in Sources */,
+				8E217C0228561BC2000A556D /* ContentView.swift in Sources */,
+				8E217C3128561F71000A556D /* helper.swift in Sources */,
+				8E217C0C28561BC6000A556D /* practice_imageCropping.xcdatamodeld in Sources */,
+				8E217C3528562A66000A556D /* ViewController.swift in Sources */,
+				8E217C0028561BC2000A556D /* practice_imageCroppingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C0D28561BC6000A556D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E217C1628561BC6000A556D /* practice_imageCroppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E217C1728561BC6000A556D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E217C2028561BC6000A556D /* practice_imageCroppingUITests.swift in Sources */,
+				8E217C2228561BC6000A556D /* practice_imageCroppingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E217C1328561BC6000A556D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E217BFB28561BC2000A556D /* practice-imageCropping */;
+			targetProxy = 8E217C1228561BC6000A556D /* PBXContainerItemProxy */;
+		};
+		8E217C1D28561BC6000A556D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E217BFB28561BC2000A556D /* practice-imageCropping */;
+			targetProxy = 8E217C1C28561BC6000A556D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8E217C2328561BC6000A556D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E217C2428561BC6000A556D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E217C2628561BC6000A556D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"practice-imageCropping/Preview Content\"";
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need to save edited photos in library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCropping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E217C2728561BC6000A556D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"practice-imageCropping/Preview Content\"";
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Need to save edited photos in library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCropping";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E217C2928561BC6000A556D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCroppingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice-imageCropping.app/practice-imageCropping";
+			};
+			name = Debug;
+		};
+		8E217C2A28561BC6000A556D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCroppingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/practice-imageCropping.app/practice-imageCropping";
+			};
+			name = Release;
+		};
+		8E217C2C28561BC6000A556D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCroppingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "practice-imageCropping";
+			};
+			name = Debug;
+		};
+		8E217C2D28561BC6000A556D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 34XRA32US9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Think.practice-imageCroppingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "practice-imageCropping";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E217BF728561BC2000A556D /* Build configuration list for PBXProject "practice-imageCropping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E217C2328561BC6000A556D /* Debug */,
+				8E217C2428561BC6000A556D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E217C2528561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCropping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E217C2628561BC6000A556D /* Debug */,
+				8E217C2728561BC6000A556D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E217C2828561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCroppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E217C2928561BC6000A556D /* Debug */,
+				8E217C2A28561BC6000A556D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E217C2B28561BC6000A556D /* Build configuration list for PBXNativeTarget "practice-imageCroppingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E217C2C28561BC6000A556D /* Debug */,
+				8E217C2D28561BC6000A556D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E217C0A28561BC6000A556D /* practice_imageCropping.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E217C0B28561BC6000A556D /* practice_imageCropping.xcdatamodel */,
+			);
+			currentVersion = 8E217C0B28561BC6000A556D /* practice_imageCropping.xcdatamodel */;
+			path = practice_imageCropping.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E217BF428561BC2000A556D /* Project object */;
+}
